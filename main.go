@@ -15,8 +15,8 @@ import (
 func main() {
 	r := gin.Default()
 	r.GET("/", func(c *gin.Context) {
-		ws := c.Query("width")
-		hs := c.Query("height")
+		ws := c.Query("w")
+		hs := c.Query("h")
 
 		width, err := strconv.Atoi(ws)
 		height, err := strconv.Atoi(hs)
